@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app metadata-complete="true" version="3.0"
+ xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+ <description>description</description>
+ <display-name>Dynamic Assessment System</display-name>
+ <servlet>
+     <servlet-name>save</servlet-name>
+     <servlet-class>SaveServlet</servlet-class>
+ </servlet>
+ <servlet>
+     <servlet-name>view</servlet-name>
+     <servlet-class>ViewServlet</servlet-class>
+ </servlet>
+  <servlet>
+     <servlet-name>edit2</servlet-name>
+     <servlet-class>EditServlet2</servlet-class>
+ </servlet>
+ <servlet>
+     <servlet-name>edit</servlet-name>
+     <servlet-class>EditServlet</servlet-class>
+ </servlet>
+  <servlet>
+     <servlet-name>delete</servlet-name>
+     <servlet-class>DeleteServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+     <servlet-name>save</servlet-name>
+     <url-pattern>/SaveServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+     <servlet-name>view</servlet-name>
+     <url-pattern>/ViewServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+     <servlet-name>edit2</servlet-name>
+     <url-pattern>/EditServlet2</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+     <servlet-name>edit</servlet-name>
+     <url-pattern>/EditServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+     <servlet-name>delete</servlet-name>
+     <url-pattern>/DeleteServlet</url-pattern>
+ </servlet-mapping>
+ <welcome-file-list>
+  <welcome-file>home.jsp</welcome-file>
+ </welcome-file-list>
+</web-app>
